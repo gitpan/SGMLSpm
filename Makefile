@@ -3,8 +3,10 @@
 # or Unix-like environments.  You should check the values of the
 # variables at the beginning and change them as appropriate.
 #
-# Version: 1.03
+# Version: 1.03ii
 ########################################################################
+
+DIST = SGMLSpm-1.03ii.tar.gz
 
 #
 # Beginning of user options.
@@ -48,7 +50,7 @@ install: install_system # install_html
 
 install_system: ${MODULEDIR} ${FILES}
 
-dist: SGMLSpm-1.03.tar.gz
+dist: ${DIST}
 
 ${BINDIR}/sgmlspl: sgmlspl.pl
 	sed -e 's!/usr/bin/perl!${PERL}!' sgmlspl.pl > ${BINDIR}/sgmlspl
@@ -86,10 +88,10 @@ install_html: ${HTML_SOURCES}
 docs:
 	cd DOC; make all
 
-SGMLSpm-1.03.tar.gz: clean docs
+${DIST}: clean docs
 	cd ..; \
-	tar -c -v -z --exclude RCS -f /tmp/SGMLSpm-1.03.tar.gz SGMLSpm; \
-	mv /tmp/SGMLSpm-1.03.tar.gz SGMLSpm
+	tar -c -v -z --exclude RCS -f /tmp/${DIST} SGMLSpm; \
+	mv /tmp/${DIST} SGMLSpm
 
 clean:
 	cd DOC; make clean

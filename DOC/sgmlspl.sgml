@@ -700,7 +700,7 @@ sgml('end', sub {
 </programlisting>
 
 <para>This code will create an object, $Refs, linked to a file of
-references called <filename>references.hash</filename>.  The
+references called <filename>references.refs</filename>.  The
 <classname>SGMLS::Refs</classname> class understands the methods
 listed in table <xref linkend=table.class.refs></para>
 

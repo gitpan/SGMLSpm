@@ -1,7 +1,7 @@
 	   SGMLS.PM: A PERL5 CLASS LIBRARY FOR USE WITH THE
 		       SGMLS AND NSGMLS PARSERS
 
-			     Version 1.03
+			     Version 1.03ii
 
 
 			   David Megginson,
@@ -15,7 +15,7 @@ BUGS.]
 
 
 This distribution contains SGMLS.pm, a perl5 class library for parsing
-the output from James Clark's SGMLS and PSGMLS parsers.  This is a
+the output from James Clark's SGMLS and NSGMLS parsers.  This is a
 free package, but it is _not_ Public-Domain software -- please see the
 file COPYING in this directory for the terms of use.
 
@@ -25,6 +25,11 @@ the DOC directory.  Documentation in POD format is also included
 within each of the modules, and once they are installed, you can view
 them with perldoc (SGMLS, SGMLS::Ouptut, or SGMLS::Refs) -- there is
 no POD documentation in sgmlspl yet.
+
+Take a look in the elisp/ subdirectory for a special package for Gnu
+Emacs -- it will allow you to run (n)sgmls and sgmlspl from within an
+Emacs buffer containing an SGML file, displaying the output (LaTeX,
+for example) in another Emacs buffer.
 
 I have included a Unix Makefile for installing the package on Unix and
 Unix-like systems.  Make any necessary changes at the top of the
@@ -82,6 +87,9 @@ at the shell prompt for more information, or you can read the new
 section in the SGML documentation for sgmlspl.  All of the
 documentation for this package is available online through my home
 page, listed below.
+
+As mentioned above, there is also a convenient package for Gnu Emacs
+19 in the elisp/ directory.
 
 
 Enjoy!

@@ -1,3 +1,10 @@
+Tue Dec  5 07:20:09 1995  David Megginson <david@baeda.english.uottawa.ca>
+
+* VERSION 1.03ii	
+
+	* Fixed typo in sgmlspl.sgml -- changed "references.hash" to
+	"references.refs" for consistency (reported by Rick Wong).
+
 * VERSION 1.03
 
 Sun Dec  3 17:03:32 1995  David Megginson  <david@baeda.english.uottawa.ca>

@@ -5,7 +5,7 @@ use Exporter;
 @ISA = Exporter;
 @EXPORT = qw(output push_output pop_output);
 
-$version = '$Id: Output.pm,v 1.5 1995/12/03 21:27:59 david Exp $';
+$version = '$Id: Output.pm,v 1.6 1995/12/05 12:21:51 david Exp $';
 
 =head1 NAME
 
@@ -141,6 +141,10 @@ sub push_output {
 			 $current_output_sub];
   SWITCH: {
       $type eq 'handle' && do {
+          # Force unqualified filehandles into caller's package
+          my ($package) = caller;
+          $data =~ s/^[^':]+$/$package\:\:$&/;
+
 	  $current_output_sub = $output_handle_sub;
 	  $current_output_type = 'handle';
 	  $current_output_data = $data;
