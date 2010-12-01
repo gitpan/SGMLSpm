@@ -6,7 +6,7 @@ $version = '$Id: Refs.pm,v 1.5 1995/12/03 21:28:36 david Exp $';
 
 =head1 NAME
 
-SGMLS::Refs
+SGMLS::Refs - Forward reference handling
 
 =head1 SYNOPSIS
 

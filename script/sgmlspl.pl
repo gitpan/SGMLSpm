@@ -238,7 +238,7 @@ sub main::sgml {
 package main;
 
 $ARGV = shift;
-unless ($ARGV eq '' || do $ARGV) {
+unless ($ARGV eq '' || do 'sgmlspl-specs/' . $ARGV || do $ARGV) {
     if (!-e $ARGV) {
 	die "FATAL: $ARGV does not exist.\n";
     } elsif (!-r $ARGV) {

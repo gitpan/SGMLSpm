@@ -1,3 +1,13 @@
+Sun Nov	 7 20:22:01 2010  Andy Bailey <GooseYArd@gmail.com>
+
+* VERSION 1.1
+
+	Updated the package to use Module::Build. This should help
+	distribution packagers who commonly patched the old Makefile
+	to rearrange the install.
+
+	Applied Ardo van Rangelrooij's debian patches
+
 Tue Dec  5 07:18:09 1995  David Megginson <david@baeda.english.uottawa.ca>
 
 * VERSION 1.03ii
@@ -24,7 +34,6 @@ Sun Dec  3 11:37:08 1995  David Megginson  <david@baeda.english.uottawa.ca>
 Sat Dec  2 21:24:05 1995  David Megginson  <david@baeda.english.uottawa.ca>
 
 	* Refs.pm: Added POD documentation to the module.
-
 	* Output.pm: Added POD documentation to the module.
 
 Thu Nov 16 06:52:46 1995  David Megginson  <david@baeda.english.uottawa.ca>

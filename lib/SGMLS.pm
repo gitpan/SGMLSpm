@@ -1,7 +1,7 @@
 package SGMLS;
 use Carp;
 
-$version = '$Revision: 1.14 $';
+$VERSION = '1.1';
 
 =head1 NAME
 

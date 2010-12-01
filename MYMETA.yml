@@ -1,0 +1,34 @@
+---
+abstract: "a perl5 class library for parsing the output from James Clark's SGMLS and NSGMLS parsers."
+author:
+  - 'David Megginson'
+configure_requires:
+  Module::Build: 0.36
+dynamic_config: 0
+generated_by: 'Module::Build version 0.3607'
+license: gpl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: SGMLSpm
+provides:
+  SGMLS:
+    file: lib/SGMLS.pm
+    version: 1.1
+  SGMLS::Output:
+    file: lib/SGMLS/Output.pm
+  SGMLS::Refs:
+    file: lib/SGMLS/Refs.pm
+  SGMLS_Attribute:
+    file: lib/SGMLS.pm
+  SGMLS_Element:
+    file: lib/SGMLS.pm
+  SGMLS_Entity:
+    file: lib/SGMLS.pm
+  SGMLS_Event:
+    file: lib/SGMLS.pm
+  SGMLS_Notation:
+    file: lib/SGMLS.pm
+resources:
+  license: http://www.gnu.org/licenses/old-licenses/gpl-1.0.txt
+version: 1.1
